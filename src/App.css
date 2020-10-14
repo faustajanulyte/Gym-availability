@@ -1,38 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+  color:rgba(151,215,0,1);
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  background-color: rgb(37, 37, 37);
+  font-family: 'Montserrat', sans-serif !important;
+}
+.react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+  background-color: rgba(151,215,0,1) !important;
+}
+.react-datepicker__navigation--next {
+  border-left-color: rgb(37, 37, 37) !important;
+}
+.react-datepicker__navigation--previous {
+  border-right-color: rgb(37, 37, 37) !important;
+}
+.react-datepicker {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+  background-color: rgba(151,215,0,1) !important;
+}
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+  background-color: rgba(151,215,0,1) !important;
+}
+.react-datepicker__input-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.react-datepicker-wrapper {
+  width: 20% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0 auto !important;
+}
+tspan {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.example-custom-input {
+  cursor: pointer;
+  padding: 5px 15px;
+  border: 0;
+  border-radius: 4px;
+  background-color: rgba(151,215,0,1);
+  color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.average {
+  color:rgba(151,215,0,1);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  margin-top: 0px;
+}
+.area-chart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recharts-text {
+  color: white !important;
+  fill: white !important;
 }
